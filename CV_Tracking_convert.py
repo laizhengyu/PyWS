@@ -4,7 +4,8 @@ Created on Mon May 17 10:24:03 2021
 
 @author: lzy
 """
-
+#python version 3.7.3
+#opencv version 4.5.4
 import cv2
 import sys
 import numpy as np
@@ -85,10 +86,7 @@ if __name__ == '__main__':
 
         # Update tracker 更新检测器
         ok, bbox = tracker.update(frame)
-
-        # Calculate Frames per second (FPS) 计算FPS
-#        fps = cv2.getTickFrequency() / (cv2.getTickCount() - timer);
-
+        
         # Draw bounding box 绘制边界框
         if ok:
             # Tracking success 跟踪成功
